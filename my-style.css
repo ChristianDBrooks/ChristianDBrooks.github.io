@@ -1,0 +1,29 @@
+body {
+    background-image: url(connectwork/connectwork.png);
+}
+
+@media (min-width: 576px) {
+    .navbar {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 645px) {
+    .navbar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    nav h1 {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

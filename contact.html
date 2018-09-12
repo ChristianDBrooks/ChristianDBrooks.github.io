@@ -1,54 +1,59 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="my-style.css">
 </head>
 
-<body background="assets/images/connectwork.png">
-    <header>
-
-        <h1 class="name">Christian Brooks</h1>
-
-        <div class="navbar">
-            <a class="a1" href="index.html">About</a>
-            <div class="h-div"></div>
-            <a class="a2" href="portfolio.html">Portfolio</a>
-            <div class="h-div"></div>
-            <a class="a3" href="#">Contact</a>
+<body class="bg-dark">
+    <div class="bg-light border-bottom border-success mb-5">
+        <nav class="navbar navbar-light bg-light py-0">
+            <h1 class="bg-dark text-light py-3" style="height: 100%;">
+                Christian Brooks
+            </h1>
+            <ul class="nav">
+                <li class="nav-item border-right border-dark">
+                <a class="nav-link text-dark active" href="index.html">About</a>
+                </li>
+                <li class="nav-item border-right border-dark">
+                <a class="nav-link text-dark" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container bg-light px-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-dark mt-3 mb-0" id="aboutMe">Contact</h1>
+            </div>
         </div>
-
-    </header>
-
-    <section>
-        <h1 class="contact">Contact</h1>
-
-        <hr>
-
-        <form action="#">
-
-            <label for="name">Name</label>
-            <input name="name" type="text" placeholder="John Smith">
-
-            <br>
-
-            <label for="email">Email</label>
-            <input name="email" type="text" placeholder="example@gmail.com">
-
-            <br>
-
-            <label for="message">Message</label>
-            <textarea name="message" id="" cols="85" rows="12" placeholder="Enter your message here."></textarea>
-
-            <input class="button" type="submit" value="Submit">
+        <div class="row">
+            <div class="col-12">
+                <hr class="mb-4">
+            </div>
+        </div>
+        <form action="" class="">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" placeholder="John Smith" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" placeholder="John Smith" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="tarea">Message</label>
+                <textarea name="" id="tarea" rows="10" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark mb-4">Submit</button>
         </form>
-    </section>
-
-    <footer>
-        <p>Copyright &copy;</p>
-    </footer>
+    </div>
 </body>
-
 </html>
