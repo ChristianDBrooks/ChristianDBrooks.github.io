@@ -1,6 +1,8 @@
-body {
-    background-image: url(connectwork/connectwork.png);
-}
+/* body {
+    background-image: url(images/landscape-resize-tall.jpeg);
+    background-repeat: no-repeat;
+    background-size: auto;
+} */
 
 @media (min-width: 576px) {
     .navbar {
