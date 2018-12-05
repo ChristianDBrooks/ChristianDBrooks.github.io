@@ -5,215 +5,308 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChristianDBrooks</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/united/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:900|Oswald|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="my-style.css">
 </head>
 
-<body class="bg-primary">
-    <div class="bg-light mb-5">
-        <nav class="navbar navbar-light bg-light py-0">
-            <h1 class="text-primary pl-3 py-3" style="height: 100%;">
-                Christian Brooks
-            </h1>
-            <ul class="nav">
-                <li class="nav-item border-right border-secondary">
-                    <a class="nav-link text-secondary active" href="#">About</a>
-                </li>
-                <li class="nav-item border-right border-secondary">
-                    <a class="nav-link text-secondary" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-secondary" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="container bg-light px-5">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-secondary mt-3 mb-0" id="aboutMe">About Me</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <hr class="mb-4">
-            </div>
-        </div>
-        <div class="row pb-4">
-            <div class="col-sm-2">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <img src="images/profile.jpg" alt="Image-Not-Found" class="rounded-circle w-75 d-block mx-auto mb-3">
-                        <div class="text-center ml-3">
-                            <a class="text-center font-weight-bold" href="https://github.com/ChristianDBrooks">GitHub</a>
-                            <a class="text-center font-weight-bold" href="https://www.linkedin.com/in/christian-brooks-26466916a/">LinkedIn</a>
-                        </div>
-                    </div>
+<body>
+    <div id="landing-page">
+        <div id="landing-page-wrapper">
+            <div class="bg-white text-center">
+                <div style="display: none;" id="myName">
+                    <h2 class="font-orbitron pt-4 pb-0 mb-0" style="letter-spacing: 5px;">CHRISTIAN BROOKS</h2>
+                    <h5 class="font-raleway pb-4"> WEB DEVELOPER </h5>
                 </div>
-
             </div>
-            <div class="col-sm-10">
-                <p style="text-indent: 30px;">
-                    Web Developer with a background in retail and repair (phones, computers, and electronics). In high
-                    school I played around with graphic design which let me into teaching myself the basics of Python
-                    in six months. I decided to follow my passion for web development and enrolled into the Full-stack
-                    Bootcamp through UNC Charlotte where I honed my skills in critical thinking, programming, and
-                    design. These skills help me to communicate complex ideas to others, provide sleek front-end
-                    design, and efficient back-end logic.
-                </p>
+            <div style="height: 100vh;">
+                <!-- content on picture -->
+                <div class="d-flex flex-column justify-content-center align-items-center" style="height: 80vh;">
+                    <h1 class="text-light font-orbitron" style="font-size: 3rem; display: none;" id="heroFirst">STRIVING
+                        FOR EXCELLENT SOLUTIONS.</h1>
+                    <p class="lead text-light" style="display: none;" id="heroSecond">"It’s not a bug – it’s an
+                        undocumented feature." (Anonymous)</p>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- PORTFOLIO -->
-    <div class="container bg-light px-5 mt-5">
+    <div class="container" style="height: 70vh;">
         <div class="row">
-            <div class="col-12">
-                <h1 class="text-secondary mt-3 mb-0" id="aboutMe">Portfolio</h1>
+            <div style="height: 70vh;" class="col col-lg-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <img class="img-fluid rounded-circle w-75" style="box-shadow: 30px 30px 50px rgba(0,0,0,.3)" src="./images/profile.jpg">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <hr class="mb-4">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="container">
-                    <div class="container">
-                        <!-- BE - Project 1 -->
-                        <div>
-                            <h3>Source1Phones</h3>
-                            <a href="https://stormy-ridge-44924.herokuapp.com/">
-                                <div class="w-50" style="height: 200px; overflow: hidden;">
-                                    <img class="bg-dark p-3" style="width:100%;" src="https://static.wixstatic.com/media/e7efae_60ee05dead7742eaa3898be2dae564db~mv2_d_14400_4680_s_3_2.png/v1/fill/w_1330,h_432,al_c,q_85,usm_0.66_1.00_0.01/e7efae_60ee05dead7742eaa3898be2dae564db~mv2_d_14400_4680_s_3_2.webp">
-                                </div>
+            <div style="height: 70vh;" class="col col-lg-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <h3>
+                        About Me:
+                    </h3>
+                    <p class="indent">
+                        Web Developer with a background in retail and repair (phones, computers, and electronics). In
+                        high
+                        school I played around with graphic design which let me into teaching myself the basics of
+                        Python
+                        in six months. I decided to follow my passion for web development and enrolled into the
+                        Full-stack
+                        Bootcamp through UNC Charlotte where I honed my skills in critical thinking, programming, and
+                        design. These skills help me to communicate complex ideas to others, provide sleek front-end
+                        design, and efficient back-end logic.
+                    </p>
+                    <div class="row no-gutters pt-5">
+                        <div class="col col-lg-4">
+                            <a href="https://www.linkedin.com/in/christian-brooks-26466916a/">
+                                <h5 class="d-inline">
+                                    LinkedIn
+                                </h5>
+                                <img class="d-inline" src="./images/icons/circle/linkedin-cir.png" style="height: 30px;"
+                                    alt="">
                             </a>
-                            <h6 class="mt-3"><u>Summary</u></h6>
-                            <p style="text-indent: 50px;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam at, amet accusamus sed distinctio expedita possimus! Omnis placeat et quibusdam nam. Quidem voluptas maxime illum totam, sequi in sit excepturi deserunt minima cumque iure ipsa. Temporibus consequuntur suscipit dicta repellendus sit, nesciunt, cumque est assumenda porro dolores inventore vel libero?
-                            </p>
+                        </div>
+                        <div class="col col-lg-4">
+                            <a href="https://github.com/ChristianDBrooks">
+                                <h5 class="d-inline">
+                                    GitHub
+                                </h5>
+                                <img class="d-inline" src="./images/icons/circle/github-cir.png" style="height: 30px;"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="col col-lg-4">
+                            <a href="./WebDevResumeDec2018.html">
+                                <h5 class="d-inline">
+                                    Resume
+                                </h5>
+                                <img class="d-inline" src="./images/icons/circle/github-cir.png" style="height: 30px;"
+                                    alt="">
+                            </a>
                         </div>
                     </div>
-                    <!-- FE - Project 1 -->
-                    <div>
-                        <h3>BudgetMax</h3>
-                        <a href="https://glacial-refuge-45870.herokuapp.com/">
-                            <div class="w-50" style="height: 200px; overflow: hidden;">
-                                <img style="width:100%;" src="images/thumbnail-11.png">
-                            </div>
-                        </a>
-                        <h6 class="mt-3"><u>Summary</u></h6>
-                        <p>Test Account<br>Email: <b>test123@email.com</b> Password: <b>test123</b></p>
-                        <p style="text-indent: 50px;">With this project me and my team were given the task
-                            to create an app we wanted using a MySql Database and any other technologies! I decided to
-                            develop the front-end as the team leader on this project.</p>
-                    </div>
-                </div>
-                <div class="container">
-                    <!-- BE - Project 1 -->
-                    <div>
-                        <h3>Planet Together</h3>
-                        <a href="https://christiandbrooks.github.io/Group-Planner/">
-                            <div class="w-50" style="height: 200px; overflow: hidden;">
-                                <img style="width:100%;" src="images/thumbnail-6.png">
-                            </div>
-                        </a>
-                        <h6 class="mt-3"><u>Summary</u></h6>
-                        <p style="text-indent: 50px;">In this project me and my team were given the task
-                            to
-                            create an app we wanted using any API and create the best app you can. We created an app
-                            that
-                            allows you to see what events are going on in your area, then send a plan to friends where
-                            they
-                            can then narrow down the selection of events to what they would like to do. I
-                            was designated as back-end database development by the team leader. </p>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Contact Me Portion -->
-    <div class="container px-5 bg-light mt-5 mb-4">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-primary mt-3 mb-0" id="contactMe">Contact</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <hr class="mb-4">
-            </div>
-        </div>
-        <form class="gform" action="https://script.google.com/macros/s/AKfycbw9CoSkMnzJIHt7QBOFQpb-e3iKpFDS3-Dscjrn/exec"
-            method="" name="ContactUsForm">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" placeholder="John Smith" id="name" name="name" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" placeholder="johnsmith@email.com" name="email" id="email" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="tarea">Message</label>
-                <textarea id="tarea" rows="10" name="message" class="form-control"></textarea>
-            </div>
-            <button type="submit" class="btn btn-dark mb-4" onclick="window.location.reload();">Submit</button>
-        </form>
+    <div class="divider" style="height: 25vh">
+
     </div>
 
+    <div class="project container pt-4">
 
-    <!-- <div class="row mb-5">
-            https://glacial-refuge-45870.herokuapp.com/
+        <!-- Project 1 -->
+        <div class="row">
+            <div style="height: 100vh;" class="col col-lg-6 d-flex align-items-center">
+                <div>
+                    <h3>
+                        Source1Phones <span class="lead">- <a href="https://github.com/ChristianDBrooks/Project-3">GitHub
+                                Docs</a></span>
+                    </h3>
+                    <h5 class="pt-3">
+                        Summary
+                    </h5>
+                    <p class="indent">
+                        This app was created to solve several problems I observed while working at my
+                        former employer, source1phones. It provides a streamlined and easy to access communication,
+                        time management, and a repair parts ordering system within in the web app. The app was produced
+                        as a solo project for my final project at UNCC Fullstack Bootcamp and I am currently working
+                        with the owner of Source1Phones to put the app into production.
+                    </p>
+                    <h5 class="pt-3">
+                        Responsabilities
+                    </h5>
+                    <p class="indent">
+                        Creating photoshop mockups, database architecting, api implementation, client revision, and
+                        more were all things I dealth with during this project. I handled everything from the drawing
+                        board to implementation, including
+                        approaching the owner and working with him to fine tune the application for his needs.
+                        Currently the website is in trial at source1phones.
+                    </p>
+                    <h5 class="pt-3">
+                        Technologies Covered:
+                    </h5>
+                    <img style="width: 60px;" src="./images/icons/square/react-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/bs-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/js-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/node-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/express-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/mongo-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/socket-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/api-sqr.png">
+                </div>
+            </div>
+            <div style="height: 100vh;" class="col col-lg-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <h5 class="text-center">Click Me</h5>
+                    <a href="https://stormy-ridge-44924.herokuapp.com/">
+                        <img class="img-fluid" style="box-shadow: 30px 30px 50px rgba(0,0,0,.3)" src="./images/posters/s1p-poster.png"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
 
-            <a href="https://christiandbrooks.github.io/Word-Guess-Game/"><img class="img-thumbnail" src="images/thumbnail-1.png"></a>
-            <h5 class="card-title">Word Guess Game</h5>
+        <!-- Project 2 -->
+        <div class="row">
+            <div style="height: 100vh;" class="col col-lg-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <h5 class="text-center">Click Me</h5>
+                    <a href="https://glacial-refuge-45870.herokuapp.com">
+                        <img class="img-fluid" style="box-shadow: 30px 30px 50px rgba(0,0,0,.3)" src="./images/posters/budgetmax-poster.png"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+            <div style="height: 100vh;" class="col col-lg-6 d-flex align-items-center">
+                <div>
+                    <h3>
+                        BudgetMax <span class="lead">- <a href="https://github.com/ChristianDBrooks/Project2">GitHub
+                                Docs</a></span>
+                    </h3>
+                    <h5 class="pt-3">
+                        Summary
+                    </h5>
+                    <p class="indent">
+                        This app was created with two other web developers as a responsive web application to monitor
+                        personal finance transactions. You can track your budget and categories of spending with
+                        graphical data to help visually understanding personal spending.
+                    </p>
+                    <h5 class="pt-3">
+                        Responsabilities
+                    </h5>
+                    <p class="indent">
+                        I was responsible for the front-end design, theme, graphing, and implementation.
+                    </p>
+                    <h5 class="pt-3">
+                        Technologies Covered:
+                    </h5>
+                    <img style="width: 60px;" src="./images/icons/square/html-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/css-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/js-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/node-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/express-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/sql-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/api-sqr.png">
+                </div>
+            </div>
+        </div>
 
-            <a href="https://christiandbrooks.github.io/TriviaGame/"><img class="img-thumbnail" src="images/thumbnail-3.png"
-                    alt="Card image cap"></a>
-            <h5 class="card-title">Trivia Game</h5>
-
-            <a href="https://christiandbrooks.github.io/GifTastic/"><img class="img-thumbnail" src="images/thumbnail-4.png"
-                    alt="Card image cap"></a>
-
-            <h5 class="card-title">GifTastic</h5>
-
-            <a href="https://christiandbrooks.github.io/Train-Itinerary/"><img class="img-thumbnail" src="images/thumbnail-5.png"
-                    alt="Card image cap"></a>
-
-            <h5 class="card-title">Train Schedule Web App</h5>
-
-            <a href="https://christiandbrooks.github.io/Group-Planner/"><img class="img-thumbnail" src="images/thumbnail-6.png"
-                    alt="Card image cap"></a>
-
-            <h5 class="card-title">Planet Together Web App</h5>
-
-            <a href="https://github.com/ChristianDBrooks/LIRI"><img class="img-thumbnail" src="images/thumbnail-7.png"
-                    alt="Card image cap"></a>
-
-            <h5 class="card-title">Liri Node App</h5>
-
-            <a href="https://github.com/ChristianDBrooks/Bamazon"><img class="img-thumbnail" src="images/thumbnail-8.png"
-                    alt="Card image cap"></a>
-
-            <h5 class="card-title">Bamazon Node App</h5>
-
-            <a href="https://rocky-reaches-62446.herokuapp.com/"><img class="img-thumbnail" src="images/thumbnail-9.png"
-                    alt="Card image cap"></a>
-
-            <h5 class="card-title">Friend Finder Web App</h5>
-
-            <a href="https://damp-reef-71974.herokuapp.com/burgers"><img class="img-thumbnail" src="images/thumbnail-10.png"
-                    alt="Card image cap"></a>
-
-            <h5 class="card-title">Heroku Deployed Burger App</h5>
-        </div> -->
-
-    <!-- Submit the Form to Google Using "AJAX" -->
-    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+        <!-- Project 3 -->
+        <div class="row">
+            <div style="height: 100vh;" class="col col-lg-6 d-flex align-items-center">
+                <div>
+                    <h3>
+                        Planet Together <span class="lead">- <a href="https://github.com/ChristianDBrooks/Group-Planner">GitHub
+                                Docs</a></span>
+                    </h3>
+                    <h5 class="pt-3">
+                        Summary
+                    </h5>
+                    <p class="indent">
+                        This app was created as an interactive group planner to make planning a weekend in a new city or staycations at home a breeze. You can choose your location and select categories that interest you, then Planet Together will reach out to API's to compile a list of activites that your group can then vote on and chat about.
+                    </p>
+                    <h5 class="pt-3">
+                        Responsabilities
+                    </h5>
+                    <p class="indent">
+                        My primary responsability was to architect and implement a Firebase Realtime Database for each user and group. I also was tasked with developing a live chat, from scratch, with Firebase.
+                    </p>
+                    <h5 class="pt-3">
+                        Technologies Covered:
+                    </h5>
+                    <img style="width: 60px;" src="./images/icons/square/html-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/css-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/js-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/bs-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/node-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/express-sqr.png">
+                    <img style="width: 60px;" src="./images/icons/square/api-sqr.png">
+                </div>
+            </div>
+            <div style="height: 100vh;" class="col col-lg-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <h5 class="text-center">Click Me</h5>
+                    <a href="https://christiandbrooks.github.io/Group-Planner/">
+                        <img class="img-fluid" style="box-shadow: 30px 30px 50px rgba(0,0,0,.3)" src="./images/posters/planet-poster.png"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
+
+<!-- New Project Template - Picture Right -->
+
+<!-- <div class="project container">
+        <div class="row">
+            <div style="height: 100vh;" class="col col-lg-6 d-flex align-items-center">
+                <div>
+                    <h3>Project Lorem Ipsum</h3>
+                    <h5 class="pt-3">Summary</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque modi consectetur aliquam aut nesciunt accusamus architecto beatae hic illum perferendis maxime, blanditiis nobis rerum sunt eveniet! Obcaecati iste saepe corrupti.</p>
+                    <h5 class="pt-3">Responsabilities</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quis corporis quidem quibusdam in provident debitis, temporibus quod dolor, quisquam nobis consequuntur adipisci? Est a vitae assumenda, tempore numquam earum doloribus ducimus consequatur reprehenderit odit delectus magni magnam alias qui repudiandae exercitationem architecto amet at nulla? Atque dolorum aperiam nobis?</p>
+                    <h5 class="pt-3">Technologies Covered:</h5>
+                    <img style="width: 75px;" src="./images/icons/square/html-sqr.png">
+                    <img style="width: 75px;" src="./images/icons/square/css-sqr.png">
+                    <img style="width: 75px;" src="./images/icons/square/js-sqr.png">
+                    <img style="width: 75px;" src="./images/icons/square/node-sqr.png">
+                    <img style="width: 75px;" src="./images/icons/square/socket-sqr.png">
+                </div>
+            </div>
+            <div style="height: 100vh;" class="col col-lg-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <a href="#">
+                        <img class="img-fluid" style="box-shadow: 30px 30px 50px rgba(0,0,0,.3)" src="./images/posters/s1p-poster.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+<!-- New Project Template - Picture Left -->
+
+<!-- <div class="project container">
+    <div class="row">
+        <div style="height: 100vh;" class="col col-lg-6 d-flex justify-content-center align-items-center">
+            <div>
+                <a href="#">
+                    <img class="img-fluid" style="box-shadow: 30px 30px 50px rgba(0,0,0,.3)" src="./images/posters/s1p-poster.png"
+                        alt="">
+                </a>
+            </div>
+        </div>
+        <div style="height: 100vh;" class="col col-lg-6 d-flex align-items-center">
+            <div>
+                <h3>Project Lorem Ipsum</h3>
+                <h5 class="pt-3">Summary</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque modi consectetur aliquam aut
+                    nesciunt accusamus architecto beatae hic illum perferendis maxime, blanditiis nobis rerum sunt
+                    eveniet! Obcaecati iste saepe corrupti.</p>
+                <h5 class="pt-3">Responsabilities</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quis corporis quidem
+                    quibusdam in provident debitis, temporibus quod dolor, quisquam nobis consequuntur adipisci?
+                    Est a vitae assumenda, tempore numquam earum doloribus ducimus consequatur reprehenderit odit
+                    delectus magni magnam alias qui repudiandae exercitationem architecto amet at nulla? Atque
+                    dolorum aperiam nobis?</p>
+                <h5 class="pt-3">Technologies Covered:</h5>
+                <img style="width: 75px;" src="./images/icons/square/html-sqr.png">
+                <img style="width: 75px;" src="./images/icons/square/css-sqr.png">
+                <img style="width: 75px;" src="./images/icons/square/js-sqr.png">
+                <img style="width: 75px;" src="./images/icons/square/node-sqr.png">
+                <img style="width: 75px;" src="./images/icons/square/socket-sqr.png">
+            </div>
+        </div>
+    </div>
+</div> -->

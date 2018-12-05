@@ -1,31 +1,48 @@
-/* body {
-    background-image: url(images/landscape-resize-tall.jpeg);
-    background-repeat: no-repeat;
-    background-size: auto;
-} */
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Teko', sans-serif; */
 
-@media (min-width: 576px) {
-    .navbar {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+
+#landing-page {
+    background-image: url("./images/landingpage/orange-mtn-pattern.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
-@media (max-width: 645px) {
-    .navbar {
-        padding-left: 0;
-        padding-right: 0;
-    }
+/* Full page Foggy */
+/* #landing-page {
+    background-image: url("./images/landingpage/skycraper-fog-dark.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+} */
 
-    nav h1 {
-        width: 100%;
-        margin: auto;
-        text-align: center;
-    }
+.divider {
+    background-image: url("./images/orange-mtn-divide.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+}
 
-    nav ul {
-        margin: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+.project {
+    height: 100vh;
+}
+
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+p, .font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.indent {
+    text-indent: 30px;
 }
