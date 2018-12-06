@@ -3,7 +3,7 @@ font-family: 'Teko', sans-serif; */
 
 
 #landing-page {
-    background-image: url("./images/landingpage/orange-mtn-pattern.png");
+    background-image: url("./images/landingpage/hdd-pattern.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,8 +20,8 @@ font-family: 'Teko', sans-serif; */
 } */
 
 .divider {
-    background-image: url("./images/orange-mtn-divide.png");
-    background-position: top;
+    background-image: url("./images/landingpage/lightbulb-pattern.png");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 25vh;
